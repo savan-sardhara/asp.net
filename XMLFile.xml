@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements><Ad>
+  <ImageUrl>image/g1.png</ImageUrl>
+  <NavigateUrl>https://www.google.com/</NavigateUrl>
+  <AlternateText>google</AlternateText>
+  <Impressions>20</Impressions>
+  <Keyword>Google</Keyword>
+</Ad>
+
+<Ad>
+  <ImageUrl>image/p1.png</ImageUrl>
+  <NavigateUrl>https://marlinpaul.tumblr.com/</NavigateUrl>
+  <AlternateText>php</AlternateText>
+  <Impressions>10</Impressions>
+  <Keyword>php</Keyword>
+</Ad>
+<Ad>
+  <ImageUrl>image/m1.jfif</ImageUrl>
+  <NavigateUrl>https://www.google.com/maps</NavigateUrl>
+  <AlternateText>map</AlternateText>
+  <Impressions>8</Impressions>
+  <Keyword>map</Keyword>
+</Ad>
+</Advertisements>
+

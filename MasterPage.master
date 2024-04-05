@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" Height="92px" 
+            ImageUrl="~/atmiyalogo.png" Width="105px" />
+        <asp:Label ID="Label1" runat="server"  Text="Atmiya University" Font-Bold="True" 
+            Font-Italic="False" Font-Size="40pt" ForeColor="#6600FF" 
+            ViewStateMode="Disabled"></asp:Label>
+        <br />
+        <br />
+        <asp:Menu ID="Menu1" runat="server" 
+            Orientation="Horizontal"  Font-Bold="True" style="padding:0 500px 0 500px"
+            Font-Italic="True" Font-Size="0.8em" ForeColor="#990000" 
+            BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Sans Serif" 
+            onmenuitemclick="Menu1_MenuItemClick" StaticSubMenuIndent="10px">
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <Items>
+                <asp:MenuItem Text="Unit 1" Value="unit1">
+                    <asp:MenuItem NavigateUrl="~/radiobutton.aspx" Text="RadioButton" 
+                        Value="RadioButton">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/CheckBox.aspx" Text="CheBox" 
+                        Value="CheBox"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RadioboxList.aspx" Text="RediobuttonList" 
+                        Value="RediobuttonList"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/CheckboxList.aspx" Text="CheckboxList" 
+                        Value="CheckboxList">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ListBox.aspx" Text="ListBox" Value="ListBox">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DropdownList.aspx" Text="DroupdownList" 
+                        Value="DroupdownList"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/IdCard.aspx" Text="IdCard" Value="IdCard">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/SimpleImage.aspx" Text="SimpleImage" 
+                        Value="SimpleImage"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ImageBox.aspx" Text="ImageBox" Value="ImageBox">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/fontstyle.aspx" Text="Bold,Text,Italic,Lable" 
+                        Value="Bold,Text,Italic,Lable"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/link.aspx" Text="links" Value="links">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Default7.aspx" Text="list box 2" 
+                        Value="list box 2"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/listbox_assignment.aspx" Text="Listbox ass" 
+                        Value="Listbox ass"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ibtlb.aspx" Text="Simple input" 
+                        Value="Simple input"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Unit 2" Value="unit2">
+                    <asp:MenuItem NavigateUrl="~/file upload.aspx" Text="file upload" 
+                        Value="file upload"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/adroteter.aspx" Text="ad rotator" 
+                        Value="ad rotator"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/fileuploadvalidation.aspx" 
+                        Text="file upload validate" Value="file upload validate"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/calender.aspx" Text="calender" Value="calender">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/timercontrolls.aspx" Text="Timer" Value="New Item">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/imagemap.aspx" Text="Image map" Value="Image map">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+<asp:MenuItem Text="Unit 3" Value="Unit 3">
+    <asp:MenuItem Text="Traffic" Value="New Item"></asp:MenuItem>
+    <asp:MenuItem Text="Reqired  field" Value="New Item" 
+        NavigateUrl="~/requiredfield.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#FFCC66" />
+        </asp:Menu>
+
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <br />
+        <asp:Label ID="Label2" runat="server" Font-Names="Times New Roman"
+            Text="Name : Sardhara Savan / C4 / Roll No : 44" Font-Bold="True" 
+            Font-Italic="False" Font-Size="35pt" ForeColor="#0033CC"></asp:Label>
+    </div>
+    </form>
+</body>
+</html>
